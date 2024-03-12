@@ -33,7 +33,7 @@ function Coins() {
         <Loading />
       ) : (
         <div className="text-[#FFD0EC] h-1/2  max-container bg-[#1F2544] mt-8 ">
-          <div className="flex items-center justify-center w-full gap-8">
+          <div className="flex sm:flex-row items-center justify-center w-full gap-8 flex-col">
             <div>
               <input
                 type="text"
@@ -70,7 +70,7 @@ function Coins() {
           <table className="w-3/4 m-auto mt-4 border-spacing-y-3.5 overflow-scroll table-auto border-slate-50 border-2">
             <thead className="  border-[#474F7A] border-2 bg-[#FFD0EC] text-[#1F2544]">
               <tr>
-                <th>Logo</th>
+                <th className="max-md:hidden">Logo</th>
                 <th className="p-4">Name</th>
                 <th>Price</th>
                 <th className="px-4">Price Change %</th>
@@ -95,11 +95,11 @@ function Coins() {
                       key={items.name}
                       className="pt-8   border-[#474F7A] border-2"
                     >
-                      <td>
+                      <td className="max-md:hidden">
                         <img
                           src={items.image}
                           alt={items.name}
-                          className=" py-2  m-auto max-h-20"
+                          className=" py-2  m-auto max-h-20 "
                         />
                       </td>
                       <td className="text-center">{items.name}</td>

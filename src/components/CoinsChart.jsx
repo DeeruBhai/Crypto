@@ -79,7 +79,8 @@ function CoinsChart({ currency }) {
                 },
               },
             }}
-            style={{ width: "60rem" }}
+            // style={{ width: "60rem" }}
+            className="md:w-1  "
           />
 
           <div className="mt-4 flex gap-4 justify-center">

@@ -1,6 +1,6 @@
 // import { home_icon } from "../assets";
 import { hamburger, homeicon } from "../assets/icons";
-
+import { GiHamburgerMenu } from "react-icons/gi";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faXmark } from "@fortawesome/free-solid-svg-icons";
 import { Link, NavLink } from "react-router-dom";
@@ -20,11 +20,17 @@ function NavBar() {
       <nav className="flex justify-between items-center max-container">
         <Link to="/">
           <div className="flex flex-col justify-center items-center gap-2">
-            <img src={homeicon} alt="headerlogo" width={50} height={20} />
+            <img
+              src={homeicon}
+              alt="headerlogo"
+              width={50}
+              height={20}
+              className="text-[#E26EE5]"
+            />
             {/* <p className="text-[#FFD0EC]">Crypt</p> */}
           </div>
         </Link>
-        <ul className="flex-1 flex justify-center items-center gap-16 max-lg:hidden">
+        <ul className="flex-1 flex justify-center items-center gap-16 max-md:hidden">
           {navLinks.map((item) => (
             <li key={item.label}>
               <NavLink
@@ -37,14 +43,18 @@ function NavBar() {
           ))}
         </ul>
         {/* */}
-        <div className="hidden max-lg:block">
-          <img
+        <div className="hidden max-md:block">
+          <GiHamburgerMenu
+            className="text-[#E26EE5] text-xl"
+            onClick={() => setHamClick(true)}
+          />
+          {/* <img
             src={hamburger}
             alt="hamburger"
             width={25}
             height={25}
             onClick={() => setHamClick(true)}
-          />
+          /> */}
         </div>
         {hamClick && (
           <div className="fixed h-full w-screen lg:hidden bg-black/50 backdrop-blur-sm top-0 left-0 z-20 transition-all delay-75">

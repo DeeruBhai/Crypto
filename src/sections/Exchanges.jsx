@@ -45,7 +45,7 @@ function Exchanges() {
             <table className="w-3/4 m-auto border-spacing-y-3.5 overflow-scroll table-auto border-[#474F7A] border-2">
               <thead className="  border-[#474F7A] border-2 bg-[#FFD0EC] text-[#1F2544]">
                 <tr>
-                  <th>Logo</th>
+                  <th className="max-md:hidden">Logo</th>
                   <th className="p-4">Name</th>
                   <th>Trade volume</th>
                   <th>Trust score rank</th>
@@ -60,7 +60,7 @@ function Exchanges() {
                       key={items.name}
                       className="pt-8   border-[#474F7A] border-2"
                     >
-                      <td className="px-8 ">
+                      <td className="px-8 max-md:hidden">
                         <img
                           src={items.image}
                           alt={items.name}

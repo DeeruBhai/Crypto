@@ -6,9 +6,11 @@ function App() {
   return (
     <main className="min-h-screen relative max-container  bg-[#1F2544]">
       <NavBar className="max-container" />
-      <section className="h-[100vh]">
+      <section className="h-[90vh]">
         <div className="text-[#FFD0EC] font-mono text-4xl justify-center flex pt-6 ">
-          <h1>CRYPT</h1>
+          <h1>
+            <b>CRYPT</b>
+          </h1>
         </div>
         <CoinModal />
       </section>
