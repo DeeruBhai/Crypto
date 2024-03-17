@@ -14,7 +14,7 @@ function NavBar() {
   ];
   return (
     <header
-      className="px-8 py-2 relative z-10 w-full bg-[#1F2544] max-container border-b-2 border-[#474F7A]
+      className="px-8 py-2 relative z-10 w-full bg-[#1F2544] max-container
     "
     >
       <nav className="flex justify-between items-center max-container">
