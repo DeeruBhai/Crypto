@@ -43,7 +43,7 @@ function Exchanges() {
             </div>
 
             <table className="w-3/4 m-auto border-spacing-y-3.5 overflow-scroll table-auto border-[#474F7A] border-2">
-              <thead className="  border-[#474F7A] border-2 bg-[#FFD0EC] text-[#1F2544]">
+              <thead className="  border-[#474F7A] border-2 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-[#1F2544] text-[#1F2544]">
                 <tr>
                   <th className="max-md:hidden">Logo</th>
                   <th className="p-4">Name</th>
