@@ -18,8 +18,8 @@ function CoinModal() {
         dpr={[1, 2]}
         shadows
         camera={{ fov: 45 }}
-        style={{ position: "relative", height: "500px" }}
-        className="absolute top-[7%]"
+        style={{ position: "relative", height: "430px" }}
+        
       >
         <color attach="background" args={["#1F2544"]} />
         <ambientLight intensity={-20} />
