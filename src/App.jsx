@@ -7,10 +7,13 @@ function App() {
     <main className="min-h-screen relative max-container  bg-[#1F2544]">
       <NavBar className="max-container" />
       <section className="h-[90vh]">
-        <div className="text-[#FFD0EC] font-mono text-4xl justify-center flex pt-6 ">
-          <h1>
-            <b>CRYPT</b>
-          </h1>
+        <div>
+          <h1 className="text-[#f4eff2] font-mono  text-4xl justify-center flex pt-4 uppercase ">
+            <b>Track and trade</b>
+          </h1>{" "}
+          <p className="text-[#FFD0EC] uppercase font-mono bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-8xl justify-center flex pt-2 ">
+            <b>Crypto currencies</b>
+          </p>
         </div>
         <CoinModal />
       </section>
